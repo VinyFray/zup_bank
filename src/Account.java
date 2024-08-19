@@ -60,4 +60,13 @@ public abstract class Account {
         destinyAccount.deposit(value);
         return balance;
     }
+
+    @Override
+    public String toString() {
+        return "Account{" +
+                "accountNumber=" + accountNumber +
+                ", agencyNumber=" + agencyNumber +
+                ", customer=" + customer +
+                '}';
+    }
 }
