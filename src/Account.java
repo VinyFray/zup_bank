@@ -45,6 +45,7 @@ public abstract class Account {
     }
 
     public double withdrawalCash(double value){
+        AccountValidation.validateBalanceForWithdrawal(this, value);
         balance -= value;
         return balance;
     }

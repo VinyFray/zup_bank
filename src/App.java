@@ -16,11 +16,11 @@ public class App {
         );
 
         try {
-            savingAccount.transferMoney(currentAccount, 200);
+            currentAccount.withdrawalCash(201);
         }catch (RuntimeException e){
             System.out.println(e.getMessage());
         }
-        System.out.println("Saldo da poupança: "+savingAccount.getBalance());
+        System.out.println("Saldo da conta corrente: "+currentAccount.getBalance()+"\nValor do cheque especial: "+currentAccount.getOverdrawn());
     }
 
 }
